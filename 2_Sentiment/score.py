@@ -13,3 +13,6 @@ df['sentiment_score'] = pd.DataFrame(df.script.apply(senti_analyze.polarity_scor
 df['sentiment'] = pd.cut(df['sentiment_score'], [-np.inf, -0.35, 0.35, np.inf], labels=['negative', 'neutral', 'positive'])
 
 df.head()
+
+# Plot sentiment score distribution
+df[['sentiment_score']].hist(bins=25)

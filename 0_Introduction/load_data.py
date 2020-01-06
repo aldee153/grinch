@@ -16,10 +16,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(context='talk', style='ticks')
-%matplotlib inline
+# %matplotlib inline
 
 # Read in data
-df = pd.read_csv("data/grinch_script.csv")
+df = pd.read_csv("C:/Users/b174270/OneDrive - H-E-B/Documents/grinch/data/grinch_script.csv")
 
 # Check first lines of data frame.
 df.head()
